@@ -1,3 +1,5 @@
+![Docker Image CI](https://github.com/BishopWolf/slicer3d-docker/workflows/Docker%20Image%20CI/badge.svg)
+
 # Slicer3D-Nightly
 
 This is the unofficial image for the **Slicer3D** `nightly-master` branch.
