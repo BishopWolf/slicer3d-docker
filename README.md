@@ -18,13 +18,13 @@ Please download Slicer from their [official website](https://www.docker.com/get-
 To use the image, you have to `pull` the newest version first:
 
 ```bash
-docker pull unnmdnwb3/slicer3d-nightly:latest
+docker pull bishopwolf/slicer3d-nightly:latest
 ```
 
 To `run` it, use the following command:
 
 ```bash
-docker run -dit unnmdnwb3/slicer3d-nightly:latest
+docker run -dit bishopwolf/slicer3d-nightly:latest
 ```
 
 If you run the following command, you get an overview over all your container instance and can retrieve the `container's id`:
