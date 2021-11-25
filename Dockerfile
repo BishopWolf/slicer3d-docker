@@ -21,7 +21,7 @@ RUN mkdir /usr/src/Slicer-build && \
     -DSlicer_USE_QtTesting:BOOL=OFF \
     /usr/src/Slicer && \
     # build dependencies
-    make -j 32
+    make -j
 
 # create environment variables
 ENV PATH="${PATH}:/usr/src/Slicer-build/python-install/bin"

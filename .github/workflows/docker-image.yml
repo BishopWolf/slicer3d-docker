@@ -18,7 +18,7 @@ jobs:
 
       - name: Build Docker images
       #run: docker build . --file Dockerfile --tag bishopwolf/slicer3d-nightly:0.4.0
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
