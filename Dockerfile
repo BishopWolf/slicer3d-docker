@@ -38,7 +38,7 @@ ENV SLICER=/usr/src/Slicer
 # Install Elastix
 RUN PythonSlicer -c "import sys;print(sys.path)"
 RUN PythonSlicer -m pip install --upgrade pip
-RUN PythonSlicer -m pip install pytest-cov
+RUN PythonSlicer -m pip install -U coverage scipy pillow pydicom
 
 # start running container
 CMD bash
