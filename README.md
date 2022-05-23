@@ -4,7 +4,7 @@
 
 This is the unofficial image for the **Slicer3D** `nightly-master` branch.
 
-This repository contains the `Dockerfile` to build the image `slicer3d-nightly` - a testing environment for [Slicer3D Nightly Build](https://github.com/Slicer/Slicer/tree/nightly-master) and therefore **Slicer 4.11**. The image can be used by project-teams working on extensions for Slicer3D.
+This repository contains the `Dockerfile` to build the image `slicer3d-nightly` - a testing environment for [Slicer3D Nightly Build](https://github.com/Slicer/Slicer/tree/nightly-master) and therefore **Slicer 5.1**. The image can be used by project-teams working on extensions for Slicer3D.
 
 In contrast to the [official Slicer images](https://github.com/thewtex/SlicerDocker), this image is based on the `nightly-build` branch of Slicer - and hence explicitly _not_ on the stable `master`. Therefore, this image supports `python3`.
 
@@ -14,6 +14,12 @@ However, the `slicer3d-nightly` is based on the official `qt5-centos7` [base-ima
 
 To be able to use `slicer3d-nightly` locally, you have to have `Docker` installed.
 Please download Slicer from their [official website](https://www.docker.com/get-started) and build it [manually](https://www.slicer.org/wiki/Documentation/Nightly/Developers/Build_Instructions).
+
+## Build
+
+* Register to dockerhub doing ``docker login``
+* Build image assigning tag ``docker build /path/to/Dockerfile -t <docker-user>/<build-name>:tag``
+* Push image ``docker push <docker-user>/<build-name>:tag``
 
 ## Installation
 
@@ -84,7 +90,7 @@ Additionally, the image is currently fixed to commit [82f0c50](https://github.co
 
 ## Warning
 
-Building the underlying `Dockerfile` takes quite some time to build locally (`make -j 1` needed *4h 17m 24s*). In order to successfully build the image, docker possibly needs more ressources than set by default. The following configuration should work for `make -j 4`:
+Building the underlying `Dockerfile` takes quite some time to build locally (`make -j 1` needed *4h 17m 24s*). In order to successfully build the image, docker possibly needs more ressources than set by default. The following configuration should work for `make -j 6`:
 
 ```bash
 CPUs: 6
