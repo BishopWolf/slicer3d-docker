@@ -38,7 +38,7 @@ ENV SLICER=/usr/src/Slicer
 # Install Elastix
 RUN PythonSlicer -c "import sys;print(sys.path)"
 RUN PythonSlicer -m pip install --upgrade pip
-RUN PythonSlicer -m pip install -U coverage scipy pillow pydicom
+RUN PythonSlicer -m pip install -U coverage scipy pillow pydicom cpu_cores xsdata defusedxml xmltodict xmlschema pymedphys matplotlib scikit-image coverage singleton-decorator importlib-metadata lmfit
 
 # start running container
 CMD bash
