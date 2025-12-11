@@ -1,6 +1,6 @@
 
 # start from base with centos & qt5
-FROM slicer/buildenv-qt5-centos7:latest
+FROM slicer/buildenv-qt5-almalinux8-gcc14
 
 WORKDIR /usr/src
 
