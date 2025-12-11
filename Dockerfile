@@ -8,7 +8,7 @@ WORKDIR /usr/src
 RUN yum install Xvfb Xorg mesa-dri-drivers libGLEW gcc -y
 
 # get slicer nighly version
-RUN git clone -b master https://github.com/Slicer/Slicer.git
+RUN git clone -b main https://github.com/Slicer/Slicer.git
 
 # create slicer-build and environment
 RUN mkdir /usr/src/Slicer-build && \
