@@ -38,7 +38,7 @@ jobs:
 
       # And make it available for the builds
       - name: Build Docker image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v2
         with:
           context: .
           push: false
